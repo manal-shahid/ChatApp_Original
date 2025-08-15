@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon backend/server.js"
+    "server": "nodemon backend/server.js",
+    "start": "node server.js",
+    "build": "cd frontend && npm install && npm run build && mv frontend/dist backend/dist"
   },
   "type": "module",
   "keywords": [],
