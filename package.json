@@ -2,12 +2,12 @@
   "name": "web-app",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "server": "nodemon backend/server.js",
-    "start": "node server.js",
-    "build": "cd ../frontend && npm install && npm run build && mv dist ../backend/dist"
+    "start": "cd backend && node server.js",
+    "build": "cd frontend && npm install && npm run build && mv dist ../backend/dist"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
